@@ -1,0 +1,30 @@
+
+.michael-x {
+  width: 100vw;
+  height: 100vh;
+  animation: michael-x 13s linear infinite alternate;
+}
+    
+.michael-y {
+  width: 100vw;
+  height: 100vh;
+  animation: michael-y 7s linear infinite alternate;
+}
+
+.michael-img {
+  width: 80px;
+  height: 100px;
+  z-index: 10000;
+}
+
+@keyframes michael-x {
+    100% {
+      transform: translateX(90%);
+    }
+  }
+  
+  @keyframes michael-y {
+    100% {
+      transform: translateY(90%);
+    }
+  }

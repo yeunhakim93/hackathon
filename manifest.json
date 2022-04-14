@@ -2,5 +2,13 @@
   "name": "Hackathon project",
   "description": "Build an Extension!",
   "version": "1.0",
-  "manifest_version": 3
+  "manifest_version": 3,
+
+
+"web_accessible_resources": [
+  {
+    "resources": [ "michael.png", "/audio/*.mp3" ],
+    "matches": ["<all_urls>"]
+  }
+]
 }
