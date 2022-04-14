@@ -4,11 +4,24 @@
   "version": "1.0",
   "manifest_version": 3,
 
+  "host_permissions": ["<all_urls>"],
 
+  "permissions": [
+    "activeTab"
+  ],
 "web_accessible_resources": [
   {
     "resources": [ "michael.png", "/audio/*.mp3" ],
-    "matches": ["<all_urls>"]
+    "matches": ["<all_urls>", "<all_urls>"]
+  }
+],
+
+"content_scripts": [
+  {
+    "matches": ["<all_urls>", "<all_urls>"],
+    "run_at": "document_idle",
+    "css": ["michael.css"],
+    "js": ["main.js"]
   }
 ]
 }

@@ -3,17 +3,20 @@
   width: 100vw;
   height: 100vh;
   animation: michael-x 13s linear infinite alternate;
+  position: absolute;
 }
     
 .michael-y {
   width: 100vw;
   height: 100vh;
   animation: michael-y 7s linear infinite alternate;
+  position: absolute;
 }
 
 .michael-img {
   width: 80px;
   height: 100px;
+  position: absolute;
   z-index: 10000;
 }
 
